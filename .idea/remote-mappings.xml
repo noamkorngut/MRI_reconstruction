@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@sftp://noam.korngut@bm@132.68.176.118:22/home/noam.korngut/.conda/envs/audio-super-res/bin/python">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/tcmldrive/Noam/AIsap/MRI_reconstruction" />
+            </list>
+          </settings>
+        </remote-mappings>
+        <remote-mappings server-id="python@sftp://noam.korngut@bm@132.68.176.118:22/tcmldrive/project_dl/virenv/envname2/bin/python">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/tcmldrive/Noam/AIsap/MRI_reconstruction" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>
