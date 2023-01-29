@@ -42,8 +42,9 @@ https://github.com/noamkorngut/MRI_reconstruction.git
 ```bash 
 python src/model train.py --model_name [KIKI, UNet] --loss_fn [MSE, L1]
 ```
-# for evaluation run: (set checkpoint path in the file)
+# for evaluation run: 
 ```bash 
+# set checkpoint path in the file and then run:
 python src/model_evaluation.py --model_name [KIKI, UNet] --loss_fn [MSE, L1]
 ```
 
