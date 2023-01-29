@@ -45,7 +45,7 @@ python src/model train.py --model_name [KIKI, UNet] --loss_fn [MSE, L1]
 # for evaluation run: 
 ```bash 
 # set checkpoint path in the file and then run:
-python src/model_evaluation.py --model_name [KIKI, UNet] --loss_fn [MSE, L1]
+python src/model_evaluation.py --model_name [KIKI, UNet] 
 ```
 
 # for part 3 please refer the ReconFormer directory
