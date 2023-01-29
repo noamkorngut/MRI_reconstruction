@@ -1,0 +1,4 @@
+brain_path: . #/path/to/brain
+knee_path: /tcmldrive/Noam/AIsap/MRI_reconstruction/
+#/home/nitzanavidan/
+log_path: .
