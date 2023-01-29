@@ -31,7 +31,7 @@ curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_val.tar
 curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_test.tar.xzAWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=%2Fo4xxDIrkuIc6M%2Fl%2Bgk0rVjLeg0%3D&Expires=1682289455" --output knee_singlecoil_test_v2.tar.xz
 ```
 (link to fastMRI Dataset: <a href="https://fastmri.med.nyu.edu/"> Link </a>)
-# set the project path in fastmri_dirs.yaml and data path in DataLoader_kspace.py
+## set the project path in fastmri_dirs.yaml and data path in DataLoader_kspace.py
 
 #  Clone this repo:
 ```bash 
