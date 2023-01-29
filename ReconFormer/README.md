@@ -15,11 +15,6 @@ Password: pguo4@jhu.edu\
 
 # Run
 
-## Clone this repo
-```bash 
-git clone git@github.com:guopengf/ReconFormer.git
-```
-
 ## Set up conda environment
 ```bash
 cd ReconFormer
