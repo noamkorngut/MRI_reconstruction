@@ -3,7 +3,7 @@
 
 
 ## Dataset:
-Prepare the dataset in the following structure for easy use of the code.The provided data loaders is ready for this this format and you may change it as your need.
+Prepare the dataset in the following structure for easy use of the code.The provided data loaders is ready for this this format.
 
 
 ```bash
