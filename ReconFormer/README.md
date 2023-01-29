@@ -31,7 +31,7 @@ bash run_recon_exp.sh
 tensorboard --logdir 'Dir path for saving checkpoints'
 ```
 ## Test 
-(Download [pre-trained weights](https://livejohnshopkins-my.sharepoint.com/:f:/g/personal/pguo4_jh_edu/Er37oIyNy3NBrXbeCQBp_fQBAxELR8UDaq6gHd-fjwRrSw) Password: pguo4@jhu.edu)
+
 ```bash 
 bash run_recon_eval.sh
 ```
