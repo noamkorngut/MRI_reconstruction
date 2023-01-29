@@ -1,5 +1,7 @@
 # MRI_reconstruction
 
+
+
 # Dataset:
 # for train, val and test sets run the following commands:
 curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_train.tar.xz?AWSAccessKeyId=AKIAJM2LEZ67Y2JL3KRA&Signature=qV5z%2Bt5EVqoExVsS%2F%2B%2Fb6O4Tneg%3D&Expires=1682289455" --output knee_singlecoil_train.tar.xz
