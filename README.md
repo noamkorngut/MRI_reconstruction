@@ -46,4 +46,4 @@ python src/model train.py --model_name [KIKI, UNet] --loss_fn [MSE, L1]
 python src/model_evaluation.py --model_name [KIKI, UNet] --loss_fn [MSE, L1]
 ```
 
-## for part 3 please refer the ReconFormer directory
+# for part 3 please refer the ReconFormer directory
