@@ -45,3 +45,5 @@ model train.py --model_name [KIKI, UNet] --loss [MSE, L1]
 ```bash 
 model_evaluation.py --model_name [KIKI, UNet] 
 ```
+
+## for part 3 please refer the ReconFormer directory
