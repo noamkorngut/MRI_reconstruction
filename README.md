@@ -33,15 +33,15 @@ curl -C - "https://fastmri-dataset.s3.amazonaws.com/v2.0/knee_singlecoil_test.ta
 (link to fastMRI Dataset: <a href="https://fastmri.med.nyu.edu/"> Link </a>)
 ## set the project path in fastmri_dirs.yaml and dath path in DataLoader_kspace.py
 
-## Clone this repo:
+#  Clone this repo:
 ```bash 
 https://github.com/noamkorngut/MRI_reconstruction.git
 ```
-##for training run:
+# for training run:
 ```bash 
 python src/model train.py --model_name [KIKI, UNet] --loss_fn [MSE, L1]
 ```
-##for evaluation run: (set checkpoint path in the file)
+# for evaluation run: (set checkpoint path in the file)
 ```bash 
 python src/model_evaluation.py --model_name [KIKI, UNet] --loss_fn [MSE, L1]
 ```
