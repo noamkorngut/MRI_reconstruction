@@ -16,7 +16,6 @@ from models import KIKI
 from models import UNet
 from fftc import ifft2c, fft2c
 
-unet_arc = True
 
 models_path = "/tcmldrive/Noam/AIsap/MRI_reconstruction/R[3]_lamb0.8_bs1_channels64_lr5e-05_layers25_Unet/_199_final.pt"
 
