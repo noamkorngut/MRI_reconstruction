@@ -39,11 +39,11 @@ https://github.com/noamkorngut/MRI_reconstruction.git
 ```
 ##for training run:
 ```bash 
-model train.py --model_name [KIKI, UNet] --loss [MSE, L1]
+python src/model train.py --model_name [KIKI, UNet] --loss [MSE, L1]
 ```
 ##for evaluation run: (set checkpoint path in the file)
 ```bash 
-model_evaluation.py --model_name [KIKI, UNet] 
+python src/model_evaluation.py --model_name [KIKI, UNet] 
 ```
 
 ## for part 3 please refer the ReconFormer directory
