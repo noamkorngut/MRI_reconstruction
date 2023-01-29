@@ -39,7 +39,7 @@ def get_exp_name ():
 
 def train(args, load_model= False, model_path=None):
     
-    out_folder = f'./R{args.accelerations}_lamb{args.lambda_}_bs{args.batch_size}_channels{args.fm}_lr{args.lr}_layers{args.k}_loss_L1/'
+    out_folder = f'./R{args.accelerations}_lamb{args.lambda_}_bs{args.batch_size}_channels{args.fm}_lr{args.lr}_layers{args.k}_KIKI_MSE/'
     
     try:
         os.mkdir (out_folder)
@@ -82,9 +82,9 @@ def train(args, load_model= False, model_path=None):
 
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, betas=(args.b1, args.b2), weight_decay=10**-7)
 
-    if(args.loss == 'MSE'):
+    if(args.loss_fn == 'MSE'):
         criterion = torch.nn.MSELoss()
-    elif(args.loss == 'L1'):
+    elif(args.loss_fn == 'L1'):
         criterion = nn.L1Loss() #SSIMLoss() #SSIM
     #elif(args.loss == 'SSIM'):
     #    criterion = loss_functions.SSIMLoss
@@ -135,9 +135,9 @@ def train(args, load_model= False, model_path=None):
 
                 # convert to image space
                 #magnitude_img = torch.sqrt(torch.sum(torch.pow(train_kspaces_us.cpu(),2), axis=1))
-                print(train_kspaces_us.shape, 'before ifft')
+                #print(train_kspaces_us.shape, 'before ifft')
                 train_img_us= ifft2c(train_kspaces_us.permute(0,2,3,1))
-                print(train_img_us.shape, 'after ifft')
+                #print(train_img_us.shape, 'after ifft')
                 #mag2 = torch.norm(train_kspaces_us.squeeze(0),dim=0)
                 train_img_us.to(device, non_blocking=True, dtype=torch.float)
                 #print(magnitude_img.shape, 'magnitude #################')
@@ -197,6 +197,7 @@ def train(args, load_model= False, model_path=None):
                     valid_img_us.to(device, non_blocking=True, dtype=torch.float)
                     rec = model(valid_img_us.permute(0,3,1,2))
                     valid_imgs_rec = rec
+                    valid_kspace_rec = fft2c(valid_imgs_rec.permute(0,2,3,1)).permute(0,3,1,2)
                 #loss_valid = criterion(valid_imgs_rec, valid_imgs_fs, torch.max(valid_imgs_fs)) #+ args.lambda_* criterion(valid_kspace_rec*(1-valid_mask), valid_kspaces_fs*(1-valid_mask), torch.max(valid_kspaces_fs))
                 loss_valid = (criterion(valid_imgs_rec, valid_imgs_fs)) + args.lambda_* (criterion(valid_kspace_rec*(1-valid_mask), valid_kspaces_fs*(1-valid_mask)))
 
