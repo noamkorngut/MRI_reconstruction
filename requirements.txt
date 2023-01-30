@@ -1,23 +1,23 @@
 #Package                        Version
 #------------------------------ ------------
-attrs                              21.2.0
-datasets                           2.2.2
+attrs===21.2.0
+datasets===2.2.2
 fastmri                            #0.2.1.dev6+g2c1e0c1  /tcmldrive/Noam/AIsap/MRI_reconstruction/fastMRI
-h5py                               2.10.0
-matplotlib                         3.3.4
-numpy                              1.20.3
-opencv-python                      4.5.3.56
-pandas                             1.5.2
-Pillow                             9.0.1
-pip                                22.3.1
-pytorch-ssim                       0.1
-scikit-image                       0.18.3
-scipy                              1.7.3
-tensorboard                        2.11.0
-tensorboard-plugin-wit             1.8.1
-tensorboardX                       2.4
-torch                              1.9.0
-torchmetrics                       0.11.0
-torchvision                        0.10.0
-tqdm                               4.62.3
-wheel                              0.37.0
+h5py===2.10.0
+matplotlib===3.3.4
+numpy===1.20.3
+opencv-python==4.5.3.56
+pandas==1.5.2
+Pillow==9.0.1
+pip==22.3.1
+pytorch-ssim==0.1
+scikit-image==0.18.3
+scipy==1.7.3
+tensorboard==2.11.0
+tensorboard-plugin-wit==1.8.1
+tensorboardX==2.4
+torch==1.9.0
+torchmetrics==0.11.0
+torchvision==0.10.0
+tqdm==4.62.3
+wheel==0.37.0
